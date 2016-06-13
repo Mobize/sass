@@ -1,0 +1,41 @@
+@import 'variables.scss';
+@import '_mixins.scss';
+
+body {
+	background-color: $bg-color;
+
+	h1 {
+		color: $primary-color;
+	}
+
+	.rounded {
+
+		padding: 20px;
+		color: $white;
+		background-color: $secondary-color;
+
+		@include border-radius(10px);
+		@include box-shadow();
+
+		a {
+			color: $link-color;
+			font-weight: bold;
+
+			&:hover {
+				color: $link-over-color;
+			}
+		}
+
+	}
+
+	.footer {
+		width: 100%;
+		color: $primary-color;
+		padding: 10px;
+
+		&.shadow {
+			background-color: $link-color;
+			@include box-shadow(2px, 2px, 2px, 2px, $primary-color);
+		}
+	}
+}
