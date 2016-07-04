@@ -1,33 +1,73 @@
+@font-face {
+  font-family: "ComicSansMS";
+  src: url("../fonts/comic.ttf");
+  font-weight: normal; }
+@font-face {
+  font-family: "ComicSansMSBold";
+  src: url("../fonts/comicbd.ttf");
+  font-weight: bold; }
+html, body {
+  width: 100%; }
+
+html {
+  height: 100%; }
+
+html, html a {
+  -webkit-font-smoothing: antialiased !important; }
+
+body {
+  min-height: 100%;
+  margin: 0;
+  padding: 0; }
+
+.clearfix {
+  clear: both; }
+
 body {
   background-color: #CCC; }
-  body h1 {
-    color: #CC0000; }
-  body .rounded {
-    padding: 20px;
-    color: #FFF;
-    background-color: #336699;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    -ms-border-radius: 10px;
-    border-radius: 10px;
-    -moz-box-shadow: 0px 0px 5px 0px #656565;
-    -webkit-box-shadow: 0px 0px 5px 0px #656565;
-    -o-box-shadow: 0px 0px 5px 0px #656565;
-    box-shadow: 0px 0px 5px 0px #656565; }
-    body .rounded a {
-      color: pink;
-      font-weight: bold; }
-      body .rounded a:hover {
-        color: purple; }
+  body .container {
+    padding: 20px; }
+    body .container h1 {
+      color: #CC0000;
+      font-family: 'ComicSansMSBold', sans-serif; }
+    body .container h2 {
+      font-family: 'ComicSansMS', sans-serif;
+      color: #336699; }
+    body .container hr {
+      margin-bottom: 20px;
+      color: #FFF; }
+    body .container .rounded {
+      padding: 20px;
+      color: #FFF;
+      background-color: #336699;
+      -webkit-border-radius: 10px;
+      -moz-border-radius: 10px;
+      -ms-border-radius: 10px;
+      border-radius: 10px;
+      -moz-box-shadow: 0px 0px 5px 0px #656565;
+      -webkit-box-shadow: 0px 0px 5px 0px #656565;
+      -o-box-shadow: 0px 0px 5px 0px #656565;
+      box-shadow: 0px 0px 5px 0px #656565; }
+      body .container .rounded p {
+        font-size: 1.2em; }
+      body .container .rounded a {
+        color: lightpink;
+        font-family: 'ComicSansMS', sans-serif;
+        text-decoration: none; }
+        body .container .rounded a:hover {
+          color: yellow; }
   body .footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
     width: 100%;
     color: #CC0000;
     padding: 10px; }
     body .footer.shadow {
-      background-color: pink;
-      -moz-box-shadow: 2px 2px 2px 2px #CC0000;
-      -webkit-box-shadow: 2px 2px 2px 2px #CC0000;
-      -o-box-shadow: 2px 2px 2px 2px #CC0000;
-      box-shadow: 2px 2px 2px 2px #CC0000; }
+      background-color: #FFF;
+      -moz-box-shadow: 2px -2px 2px 2px #336699;
+      -webkit-box-shadow: 2px -2px 2px 2px #336699;
+      -o-box-shadow: 2px -2px 2px 2px #336699;
+      box-shadow: 2px -2px 2px 2px #336699; }
 
 /*# sourceMappingURL=style.css.map */

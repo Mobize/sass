@@ -1,0 +1,19 @@
+html, body { width:100%; }
+
+html {
+	height: 100%;
+}
+
+html, html a {
+	-webkit-font-smoothing: antialiased !important;
+}
+
+body {
+	min-height: 100%;
+	margin:0;
+	padding:0;
+}
+
+.clearfix {
+	clear: both;
+}

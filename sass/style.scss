@@ -1,41 +1,66 @@
-@import 'variables.scss';
+@import '_variables.scss';
 @import '_mixins.scss';
+@import '_fonts.scss';
+@import 'common.scss';
 
 body {
+
 	background-color: $bg-color;
 
-	h1 {
-		color: $primary-color;
-	}
-
-	.rounded {
+	.container {
 
 		padding: 20px;
-		color: $white;
-		background-color: $secondary-color;
 
-		@include border-radius(10px);
-		@include box-shadow();
-
-		a {
-			color: $link-color;
-			font-weight: bold;
-
-			&:hover {
-				color: $link-over-color;
-			}
+		h1 {
+			color: $primary-color;
+			font-family: 'ComicSansMSBold', sans-serif;
 		}
 
+		h2 {
+			font-family: 'ComicSansMS', sans-serif;
+			color: $secondary-color;
+		}
+
+		hr {
+			margin-bottom: 20px;
+			color: $white;
+		}
+
+		.rounded {
+			padding: 20px;
+			color: $white;
+			background-color: $secondary-color;
+
+			@include border-radius(10px);
+			@include box-shadow();
+
+			p {
+				font-size: 1.2em;
+			}
+
+			a {
+				color: $link-color;
+				font-family: 'ComicSansMS', sans-serif;
+				text-decoration: none;
+
+				&:hover {
+					color: $link-over-color;
+				}
+			}
+		}
 	}
 
 	.footer {
+		position: fixed;
+		bottom: 0;
+		left: 0;
 		width: 100%;
 		color: $primary-color;
 		padding: 10px;
 
 		&.shadow {
-			background-color: $link-color;
-			@include box-shadow(2px, 2px, 2px, 2px, $primary-color);
+			background-color: $white;
+			@include box-shadow(2px, -2px, 2px, 2px, $secondary-color);
 		}
 	}
 }
